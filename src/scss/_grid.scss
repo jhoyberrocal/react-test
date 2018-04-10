@@ -1,0 +1,92 @@
+.content {
+  padding: 60px 0;
+  min-height: calc(100vh - 120px);
+}
+
+.row {
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.col {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  @for $i from 1 through $columnas {
+    $col-W: ($columna-width) * $i;
+    &.xs#{$i} {
+      flex-basis: unquote($col-W+'%');
+      max-width: unquote($col-W+'%');
+    }
+    &.off-#{$i} {
+      margin-left: unquote($col-W+'%');
+    }
+  }
+}
+
+@media only screen and (min-width: $sm-size){
+  .col {
+    @for $i from 1 through $columnas {
+      $col-W: ($columna-width) * $i;
+      &.sm#{$i} {
+        flex-basis: unquote($col-W+'%');
+        max-width: unquote($col-W+'%');
+      }
+      &.off-sm#{$i} {
+        margin-left: unquote($col-W+'%');
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $md-size){
+  .col {
+    @for $i from 1 through $columnas {
+      $col-W: ($columna-width) * $i;
+      &.md#{$i} {
+        flex-basis: unquote($col-W+'%');
+        max-width: unquote($col-W+'%');
+      }
+      &.off-md#{$i} {
+        margin-left: unquote($col-W+'%');
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-size){
+  .col {
+    @for $i from 1 through $columnas {
+      $col-W: ($columna-width) * $i;
+      &.lg#{$i} {
+        flex-basis: unquote($col-W+'%');
+        max-width: unquote($col-W+'%');
+      }
+      &.off-lg#{$i} {
+        margin-left: unquote($col-W+'%');
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $xl-size){
+  .col {
+    @for $i from 1 through $columnas {
+      $col-W: ($columna-width) * $i;
+      &.xl#{$i} {
+        flex-basis: unquote($col-W+'%');
+        max-width: unquote($col-W+'%');
+      }
+      &.off-xl#{$i} {
+        margin-left: unquote($col-W+'%');
+      }
+    }
+  }
+}

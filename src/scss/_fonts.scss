@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "icon-font";
+  src: url("#{$font-path}icon-font.eot?4063944d4c3fb8fa7bf4c19ad0f59965?#iefix") format("embedded-opentype"),
+  url("#{$font-path}icon-font.woff?4063944d4c3fb8fa7bf4c19ad0f59965") format("woff"),
+  url("#{$font-path}icon-font.ttf?4063944d4c3fb8fa7bf4c19ad0f59965") format("truetype"),
+  url("#{$font-path}icon-font.svg?4063944d4c3fb8fa7bf4c19ad0f59965#icon-font") format("svg");
+}
+
+.i {
+  @each $icon in $icons {
+    &-#{$icon}:before {
+      icon-font: url('./../icons/#{$icon}.svg');
+    }
+  }
+}

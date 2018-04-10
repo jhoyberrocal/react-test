@@ -1,0 +1,42 @@
+{
+  "data": [
+    {
+      "user": "Juan Rodriguez",
+      "time": "40 minutos",
+      "state": "The following demo shows how an item can align itself in the flex container depending on the align-self value",
+      "comentarios": [
+        {
+          "user": "Jose",
+          "comment": "means the recent syntax from the specification",
+          "time": "Hace 2 horas"
+        },
+        {
+          "user": "Elena",
+          "comment": "means the recent syntax from the specification",
+          "time": "Hace 2 horas"
+        },
+        {
+          "user": "Eduardo",
+          "comment": "means the recent syntax from the specification",
+          "time": "Hace 2 horas"
+        }
+      ],
+      "reactions": {
+        "yellow": 2,
+        "blue": 8,
+        "red": 3
+      }
+    },
+    {
+      "user": "Liliana Jimenez",
+      "time": "45 minutos",
+      "state": "this.props contains the props that were defined by the caller of this component.",
+      "comentarios": [],
+      "reactions": {
+        "yellow": 0,
+        "blue": 1,
+        "red": 0
+      }
+    }
+  ]
+}

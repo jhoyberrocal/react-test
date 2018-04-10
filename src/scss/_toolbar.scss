@@ -1,0 +1,16 @@
+.toolbar {
+  width: calc(100% - 14px);
+  font-size: 1.3rem;
+  padding: 10px;
+  @include toolbar(top, 0);
+  .toolbar-title {
+    font-weight: bolder;
+  }
+  .toolbar-link {
+    color: color(secondary);
+    font-size: $font-size - 2px;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+  }
+}

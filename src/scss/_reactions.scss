@@ -1,0 +1,32 @@
+.reactions {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  font-size: $font-size + 4px;
+  li {
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    i {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      color: color(white);
+      &.blue {
+        background-color: color(facebook);
+      }
+      &.yellow {
+        background-color: color(warning);
+      }
+      &.red {
+        background-color: color(error);
+      }
+    }
+    span {
+      margin-left: 5px;
+    }
+  }
+}

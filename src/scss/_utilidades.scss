@@ -1,0 +1,144 @@
+@each $key, $color in $colors {
+  .bg-#{$key} {
+    background-color: $color $imp;
+  }
+
+  .tx-#{$key} {
+    color: $color $imp;
+  }
+}
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $length in $sizes {
+    .#{$abbrev}-#{$size}{
+      #{$prop}: $length $imp;
+    }
+
+    .#{$abbrev}t-#{$size}{
+      #{$prop}-top: $length $imp;
+    }
+
+    .#{$abbrev}r-#{$size}{
+      #{$prop}-right: $length $imp;
+    }
+
+    .#{$abbrev}l-#{$size}{
+      #{$prop}-left: $length $imp;
+    }
+
+    .#{$abbrev}b-#{$size}{
+      #{$prop}-bottom: $length $imp;
+    }
+
+    .#{$abbrev}y-#{$size}{
+      #{$prop}: $length 0 $imp;
+    }
+
+    .#{$abbrev}x-#{$size}{
+      #{$prop}: 0 $length $imp;
+    }
+  }
+}
+
+.rounded-circle {
+  border-radius: 50% $imp;
+}
+
+.rounded-0 {
+  border-radius: 0 $imp;
+}
+
+i {
+  line-height: inherit;
+  font-weight: normal;
+  &.left {
+    float: left;
+    margin-right: 15px;
+  }
+  &.right {
+    float: right;
+    margin-left: 15px;
+  }
+  &.tiny {
+    font-size: 1rem;
+  }
+  &.small {
+    font-size: 2rem;
+  }
+  &.medium {
+    font-size: 4rem;
+  }
+  &.large {
+    font-size: 6rem;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.tx {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
+  &-muted {
+    color: lighten(color(dark), 20%);
+    font-size: 0.8rem;
+  }
+}
+
+.display {
+  &-h1 {
+    font-size: $h1-fontsize;
+    line-height: 110%;
+    margin: ($h1-fontsize / 4) 0;
+  }
+  &-h2 {
+    font-size: $h2-fontsize;
+    line-height: 110%;
+    margin: ($h2-fontsize / 3.5) 0;
+  }
+  &-h3 {
+    font-size: $h3-fontsize;
+    line-height: 110%;
+    margin: ($h3-fontsize / 3) 0;
+  }
+  &-h4 {
+    font-size: $h4-fontsize;
+    line-height: 110%;
+    margin: ($h4-fontsize / 2.8) 0;
+  }
+  &-h5 {
+    font-size: $h5-fontsize;
+    line-height: 110%;
+    margin: ($h5-fontsize / 2.8) 0;
+  }
+  &-h6 {
+    font-size: $h6-fontsize;
+    line-height: 110%;
+    margin: ($h6-fontsize / 2.8) 0;
+  }
+}
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: transparentize(color(snow), .5);
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}

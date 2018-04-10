@@ -1,0 +1,52 @@
+$imp: !important;
+
+$font-size: 16px;
+$font-regular: 'Roboto';
+$font-path: '/fonts/';
+
+$h1-fontsize: 2.60rem !default;
+$h2-fontsize: 2.28rem !default;
+$h3-fontsize: 2rem !default;
+$h4-fontsize: 1.94rem !default;
+$h5-fontsize: 1.40rem !default;
+$h6-fontsize: 1.15rem !default;
+
+$columnas: 12;
+$gutter: 10px;
+$columna-width: 100 / $columnas;
+$sm-size: 576px;
+$md-size: 720px;
+$lg-size: 992px;
+$xl-size: 1140px;
+
+$z-index-toolbar: 993;
+
+$colors: (
+        primary: #2acd6f,
+        secondary: #84cba2,
+        dark: #0D0F1C,
+        dark-2: #101727,
+        success: #1A8A57,
+        warning: #F2B628,
+        error: #CA2028,
+        snow: #FAFAFA,
+        facebook: #3B5998,
+        gray: #474747,
+        white: #FFFFFF
+);
+
+$sizes: (
+        0: 0,
+        0_5: 0.5rem,
+        1: 1rem,
+        1_5: 1.5rem,
+        2: 2rem,
+        2_5: 2.5rem,
+        3: 3rem,
+        3_5: 3.5rem,
+        4: 4rem,
+        4_5: 4.5rem,
+        5: 5rem
+);
+
+$icons: (add, users, happiness);
